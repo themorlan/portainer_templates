@@ -76,32 +76,27 @@
 		{
 			"name": "CONFIG_PATH_DB",
 			"label": "Nextcloud-database config-folder",
-			"description": "Folder path where the Nextcloud-Database will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/nextclouddb",
-			"default": "100"
+			"description": "Folder path where the Nextcloud-Database will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/nextclouddb"
 		},
 		{
 			"name": "MYSQL_ROOT_PW",
-			"label": "PGID",
-			"description": "Set the GID of the user ($id user) who should run the containers",
-			"default": "100"
+			"label": "MYSQL root password",
+			"description": "Set the root password for the database"
 		},
 		{
 			"name": "MYSQL_DB_PW",
-			"label": "PGID",
-			"description": "Set the GID of the user ($id user) who should run the containers",
-			"default": "100"
+			"label": "Nextcloud-database password",
+			"description": "Set the password for the Nextcloud-database"
 		},
 		{
 			"name": "CONFIG_PATH_NC",
-			"label": "PGID",
-			"description": "Set the GID of the user ($id user) who should run the containers",
-			"default": "100"
+			"label": "Nextcloud config-folder",
+			"description": "Folder path where the Nextcloud configuration will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/nextcloud/config"
 		},
 		{
 			"name": "DATA_PATH_NC",
-			"label": "PGID",
-			"description": "Set the GID of the user ($id user) who should run the containers",
-			"default": "100"
+			"label": "Nextcloud data-folder",
+			"description": "Folder path where the Nextcloud data will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/nextcloud/data"
 		}
 	]
 }]
