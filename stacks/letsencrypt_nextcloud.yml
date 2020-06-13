@@ -4,27 +4,28 @@ services:
     image: linuxserver/nextcloud
     container_name: nextcloud
     environment:
-      - PUID=1000 #change PUID if needed
-      - PGID=100  #change PGID if needed
-      - TZ=Europe/Berlin #change Time Zone if needed
+      - PUID=${PUID} 
+      - PGID=${PGID} 
+      - TZ=${TZ}
     volumes:
-      - /srv/dev-disk-by-label-disk1/appdata/nextcloud/config:/config #/srv/dev-disk-by-label-disk1 needs to be adjusted
-      - /srv/dev-disk-by-label-disk1/appdata/nextcloud/data:/data     #/srv/dev-disk-by-label-disk1 needs to be adjusted
+      - ${CONFIG_PATH_NC}:/config
+      - ${DATA_PATH_NC}:/data
     depends_on:
       - mariadb
-#    ports: # uncomment this and the next line if you want to bypass the proxy
-#      - 450:443
     restart: unless-stopped
   mariadb:
     image: linuxserver/mariadb
     container_name: nextclouddb
     environment:
       - PUID=${PUID}
-      - PGID=100  #change PGID if needed
-      - MYSQL_ROOT_PASSWORD=mariadbpassword  #change password
-      - TZ=Europe/Berlin #Change Time Zone if needed
+      - PGID=${PGID}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PW}
+      - TZ=${TZ}
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=${MYSQL_DB_PW}
     volumes:
-      - /srv/dev-disk-by-label-disk1/appdata/nextclouddb:/config    #/srv/dev-disk-by-label-disk1 needs to be adjusted
+      - $[CONFIG_PATH_DB}:/config
     restart: unless-stopped
   letsencrypt:
     image: linuxserver/letsencrypt
@@ -32,16 +33,16 @@ services:
     cap_add:
       - NET_ADMIN
     environment:
-      - PUID=1000 #change PUID if needed
-      - PGID=100  #change PGID if needed
-      - TZ=Europe/Berlin # change Time Zone if needed
-      - URL=xxxx.de #insert your domain name - yourdomain.url
-      - SUBDOMAINS=www,
-      - VALIDATION=http
-      - EMAIL=xxx.yyy@provider.com # define email; required to renew certificate
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - URL=${URL}
+      - SUBDOMAINS=${SUBDOMAINS}
+      - VALIDATION=${VALID}
+      - EMAIL=${EMAIL}
     volumes:
-      - /srv/dev-disk-by-label-disk1/appdata/letsencrypt:/config  #/srv/dev-disk-by-label-disk1 needs to be adjusted
+      - ${CONFIG_PATH_LE}:/config
     ports:
-      - 444:443
-      - 81:80
+      - ${PORT_HTTPS}:443
+      - ${PORT_HTTP}:80
     restart: unless-stopped
