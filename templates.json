@@ -52,14 +52,15 @@
 		},
 		{
 			"name": "EMAIL",
-			"label": "EMAIL",
+			"label": "Email",
 			"description": "Enter E-mail adress for notificaton of certificate expiration notifications"
 		},
 		{
 			"name": "VALID",
 			"label": "Validation method",
 			"description": "Enter validation method.",
-			"default": "http"
+			"default": "http",
+			"preset": true
 		},
 		{
 			"name": "PORT_HTTPS",
