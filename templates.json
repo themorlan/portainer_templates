@@ -22,6 +22,87 @@
 			"label": "PGID",
 			"description": "Set the GID of the user ($id user) who should run the containers",
 			"default": "100"
+		},
+		{
+			"name": "TZ",
+			"label": "Timezone",
+			"description": "Insert your timezone (e.g. Europe/Berlin)",
+		},
+		{
+			"name": "CONFIG_PATH_LE",
+			"label": "Letsencrypt config-folder",
+			"description": "Folder path where letsencrypt config data will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/letsencrypt",
+		},
+		{
+			"name": "URL",
+			"label": "URL of domain",
+			"description": "Insert your base-URL of your domain",
+		},
+		{
+			"name": "SUBDOMAINS_ONLY",
+			"label": "Only subdomains?",
+			"description": "Should the certificate be aquired for subdomains only? Set to 'true' if you dont own the base-URL of your domain (e.g. duckdns.org)",
+			"default": "false"
+		},
+		{
+			"name": "SUBDOMAINS",
+			"label": "Subdomains",
+			"description": "Enter your preffered subdomains. Multiple entries are comma-seperated without spaces (e.g. www,nextcloud)",
+			"default": "nextcloud"
+		},
+		{
+			"name": "EMAIL",
+			"label": "EMAIL",
+			"description": "Enter E-mail adress for notificaton of certificate expiration notifications",
+		},
+		{
+			"name": "VALID",
+			"label": "Validation method",
+			"description": "Enter validation method.",
+			"default": "http",
+			"preset": "true"
+		},
+		{
+			"name": "PORT_HTTPS",
+			"label": "https port",
+			"description": "Enter the port on which the letsencrypt docker should listen for https traffic",
+			"default": "444"
+		},
+		{
+			"name": "PORT_HTTP",
+			"label": "http port",
+			"description": "Enter the port on which the letsencrypt docker should listen for http traffic. Neccessary for cert validation.",
+			"default": "81"
+		},
+		{
+			"name": "CONFIG_PATH_DB",
+			"label": "Nextcloud-database config-folder",
+			"description": "Folder path where the Nextcloud-Database will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/nextclouddb",
+			"default": "100"
+		},
+		{
+			"name": "MYSQL_ROOT_PW",
+			"label": "PGID",
+			"description": "Set the GID of the user ($id user) who should run the containers",
+			"default": "100"
+		},
+		{
+			"name": "MYSQL_DB_PW",
+			"label": "PGID",
+			"description": "Set the GID of the user ($id user) who should run the containers",
+			"default": "100"
+		},
+		{
+			"name": "CONFIG_PATH_NC",
+			"label": "PGID",
+			"description": "Set the GID of the user ($id user) who should run the containers",
+			"default": "100"
+		},
+		{
+			"name": "DATA_PATH_NC",
+			"label": "PGID",
+			"description": "Set the GID of the user ($id user) who should run the containers",
+			"default": "100"
 		}
 	]
 }]
