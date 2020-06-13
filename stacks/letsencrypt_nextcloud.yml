@@ -40,6 +40,7 @@ services:
       - SUBDOMAINS=${SUBDOMAINS}
       - VALIDATION=${VALID}
       - EMAIL=${EMAIL}
+      - ONLY_SUBDOMAINS=${SUBDOMAINS_ONLY}
     volumes:
       - ${CONFIG_PATH_LE}:/config
     ports:
