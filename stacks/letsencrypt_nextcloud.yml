@@ -25,7 +25,7 @@ services:
       - MYSQL_USER=nextcloud
       - MYSQL_PASSWORD=${MYSQL_DB_PW}
     volumes:
-      - $[CONFIG_PATH_DB}:/config
+      - ${CONFIG_PATH_DB}:/config
     restart: unless-stopped
   letsencrypt:
     image: linuxserver/letsencrypt
