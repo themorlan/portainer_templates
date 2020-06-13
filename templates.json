@@ -10,7 +10,7 @@
   "repository": {
     "url": "https://github.com/themorlan/portainer_templates/tree/master",
     "stackfile": "stacks/letsencrypt_nextcloud.yml"
-  }
+  },
   "env": [
     {
        "name": "PUID",
