@@ -59,8 +59,7 @@
 			"name": "VALID",
 			"label": "Validation method",
 			"description": "Enter validation method.",
-			"default": "http",
-			"preset": true
+			"default": "http"
 		},
 		{
 			"name": "PORT_HTTPS",
