@@ -60,7 +60,7 @@
 			"label": "Validation method",
 			"description": "Enter validation method.",
 			"default": "http",
-			"preset": "true"
+			"preset": true
 		},
 		{
 			"name": "PORT_HTTPS",
