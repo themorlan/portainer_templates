@@ -1,6 +1,7 @@
 [{
 	"type": 3,
 	"title": "Nextcloud + Letsencrypt",
+	"name": "Nextcloud",
 	"description": "Combined Nextcloud + Letsencrypt Dockers by Linuxserver.io",
 	"note": "Template for setting up Nextcloud + Letsencrypt containers in accordance with the guide by macom on the OMV Forum (https://forum.openmediavault.org/index.php?thread/28216-how-to-nextcloud-with-letsencrypt-using-omv-and-docker-compose/). Please check the guide ",
 	"categories": ["nextcloud", "letsencrypt", "cloud", "hosting"],
