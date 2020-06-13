@@ -26,17 +26,17 @@
 		{
 			"name": "TZ",
 			"label": "Timezone",
-			"description": "Insert your timezone (e.g. Europe/Berlin)",
+			"description": "Insert your timezone (e.g. Europe/Berlin)"
 		},
 		{
 			"name": "CONFIG_PATH_LE",
 			"label": "Letsencrypt config-folder",
-			"description": "Folder path where letsencrypt config data will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/letsencrypt",
+			"description": "Folder path where letsencrypt config data will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/letsencrypt"
 		},
 		{
 			"name": "URL",
 			"label": "URL of domain",
-			"description": "Insert your base-URL of your domain",
+			"description": "Insert your base-URL of your domain"
 		},
 		{
 			"name": "SUBDOMAINS_ONLY",
@@ -53,7 +53,7 @@
 		{
 			"name": "EMAIL",
 			"label": "EMAIL",
-			"description": "Enter E-mail adress for notificaton of certificate expiration notifications",
+			"description": "Enter E-mail adress for notificaton of certificate expiration notifications"
 		},
 		{
 			"name": "VALID",
