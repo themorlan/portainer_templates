@@ -1,0 +1,26 @@
+[{
+	"type": 3,
+	"title": "Nextcloud + Letsencrypt",
+	"description": "Combined Nextcloud + Letsencrypt Dockers by Linuxserver.io",
+	"note": "Template for setting up Nextcloud + Letsencrypt containers in accordance with the guide by macom on the OMV Forum (https://forum.openmediavault.org/index.php?thread/28216-how-to-nextcloud-with-letsencrypt-using-omv-and-docker-compose/). Please check the guide ",
+	"categories": ["nextcloud", "letsencrypt", "cloud", "hosting"],
+	"platform": "linux",
+	"logo": "https://nextcloud.com/wp-content/themes/next/assets/img/common/nextcloud-square-logo.png",
+	"repository": {
+		"url": "https://github.com/themorlan/portainer_templates/tree/master",
+		"stackfile": "stacks/letsencrypt_nextcloud.yml"
+	},
+	"env": [{
+			"name": "PUID",
+			"label": "PUID",
+			"description": "Set the UID of the user ($id user) who should run the containers",
+			"default": "1000"
+		},
+		{
+			"name": "PGID",
+			"label": "PGID",
+			"description": "Set the GID of the user ($id user) who should run the containers",
+			"default": "100"
+		}
+	]
+}]
