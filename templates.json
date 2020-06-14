@@ -1,7 +1,7 @@
 [{
 	"type": 3,
 	"title": "Nextcloud + Letsencrypt",
-	"name": "Nextcloud",
+	"name": "nextcloud",
 	"description": "Combined Nextcloud + Letsencrypt Dockers by Linuxserver.io",
 	"note": "Template for setting up Nextcloud + Letsencrypt containers in accordance with the guide by macom on the OMV Forum (https://forum.openmediavault.org/index.php?thread/28216-how-to-nextcloud-with-letsencrypt-using-omv-and-docker-compose/). Please check the guide ",
 	"categories": ["nextcloud", "letsencrypt", "cloud", "hosting"],
@@ -42,7 +42,17 @@
 			"name": "SUBDOMAINS_ONLY",
 			"label": "Only subdomains?",
 			"description": "Should the certificate be aquired for subdomains only? Set to 'true' if you dont own the base-URL of your domain (e.g. duckdns.org)",
-			"default": "false"
+			"select": [
+				{
+					"text": "false",
+					"value": "false",
+					"default": true
+				},
+				{
+					"text": "true",
+					"value": "true"
+				}
+			]
 		},
 		{
 			"name": "SUBDOMAINS",
