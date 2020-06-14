@@ -31,7 +31,7 @@
 		{
 			"name": "CONFIG_PATH_LE",
 			"label": "Letsencrypt config-folder",
-			"description": "Folder path where letsencrypt config data will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/letsencrypt"
+			"description": "Folder path where letsencrypt config data will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should be something like /srv/dev-disk-by-label-something/appdata/letsencrypt"
 		},
 		{
 			"name": "URL",
@@ -87,7 +87,7 @@
 		{
 			"name": "CONFIG_PATH_DB",
 			"label": "Nextcloud-database config-folder",
-			"description": "Folder path where the Nextcloud-Database will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/nextclouddb"
+			"description": "Folder path where the Nextcloud-Database will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should be something like /srv/dev-disk-by-label-something/appdata/nextclouddb"
 		},
 		{
 			"name": "MYSQL_ROOT_PW",
@@ -102,12 +102,12 @@
 		{
 			"name": "CONFIG_PATH_NC",
 			"label": "Nextcloud config-folder",
-			"description": "Folder path where the Nextcloud configuration will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/nextcloud/config"
+			"description": "Folder path where the Nextcloud configuration will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should be something like /srv/dev-disk-by-label-something/appdata/nextcloud/config"
 		},
 		{
 			"name": "DATA_PATH_NC",
 			"label": "Nextcloud data-folder",
-			"description": "Folder path where the Nextcloud data will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should something like /srv/dev-disk-by-label-something/appdata/nextcloud/data"
+			"description": "Folder path where the Nextcloud data will be stored. This should not be on a SD-Card/USB-Stick. For OMV user this should be something like /srv/dev-disk-by-label-something/appdata/nextcloud/data"
 		}
 	]
 }]
